@@ -1,0 +1,10 @@
+    .dropzone-bulk{
+        border:2px dashed #b6c2c9;
+        border-style:dashed groove dashed groove;
+        color:rgb(29, 28, 28);
+        padding:70px 40px;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }

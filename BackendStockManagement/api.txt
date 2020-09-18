@@ -1,0 +1,69 @@
+dateformat: 2020-03-22
+ready:
+customer,branch,role,user,sale
+stock,item,saletype
+supplier
+saledetail
+purchase
+purchasedetail
+
+get : http://localhost:4000/customer
+getbyid: http://localhost:4000/customer/prachi@gmail.com
+add : http://localhost:4000/customer
+delete : http://localhost:4000/customer/prachi@gmail.com
+update: http://localhost:4000/customer/prachi@gmail.com
+-------------------------------------------------------
+get
+----------------------------------------------------
+GET are suppose to use to retrieve data only.
+-------------------------------------------------------------
+write this on google chrome 
+http://localhost:4000/customer
+so you can get all the records from customer table.
+-------------------------------------------------------------------------
+getbyid
+http://localhost:4000/customer/prachi@gmail.com
+so by writting this on google chrome you get record of particular id.
+-------------------------------------------------------------------------
+
+post  (for add)
+Used to submit data, typically used to create new entities
+
+
+
+http://localhost:4000/customer
+
+do same thing in postman as told in delete 
+just from drop down select post
+and write entire
+{"customer_emailId":"mauli@gmail.com","customer_name":"maulisoni","customer_address":"ahmedabad,gujarat","customer_phoneNo":"9999999999","customer_gstno":"cccdefghji12345"}
+
+and do update and press send.
+
+
+put (for update)
+used to update data
+
+http://localhost:4000/customer/prachi@gmail.com
+update is done by passing id 
+which record you want to update
+do same thing in postman as told in delete 
+just from drop down select put 
+and paste entire
+{"customer_emailId":"mauli@gmail.com","customer_name":"maulisoni","customer_address":"ahmedabad,gujarat","customer_phoneNo":"9999999999","customer_gstno":"cccdefghji12345"}
+
+and do update and press send.
+-------------------------------------------
+delete (for delete)
+------------------------------------------
+Used to delete an entire data by passing id.
+http://localhost:4000/customer/prachi@gmail.com
+
+to check for backend 
+go to postman 
+set headers first
+Content-Type    application/json
+Accept               application/json
+In postman , then write http://localhost:4000/customer/prachi@gmail.com in space provided and set delete from drop down
+
+and press send .
